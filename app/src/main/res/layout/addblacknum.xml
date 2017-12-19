@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_add_blacknum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8866ff00"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:textSize="17dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="添加黑名单"/>
+
+    <EditText
+        android:id="@+id/et_add_blacknum"
+        android:textSize="20dp"
+        android:textColor="#0066ff"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入号码" android:layout_margin="10dp"/>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/rg_add_blacknum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_add_blacknum_mobile"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="电话"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/rb_add_black_sms"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="短信"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            />
+        <RadioButton
+            android:id="@+id/rb_add_black_all"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="全部"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:textColor="#000000"
+            android:text="确定"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_ok_input"
+            android:background="@drawable/button"/>
+
+        <Button
+            android:textColor="#000000"
+            android:text="取消"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_cancel_input"
+            android:background="@drawable/button"/>
+    </LinearLayout>
+
+</LinearLayout>

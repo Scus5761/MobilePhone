@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8866ff00"
+        android:text="号码归属地查询"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+    
+    <Button
+        android:id="@+id/bt_atool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_contacts"
+        android:text="高级工具 "
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:onClick="query"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_contacts"
+        android:text="短信备份 "
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:onClick="backupsms"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_contacts"
+        android:text="短信还原"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:onClick="restoresms"/>
+
+</LinearLayout>

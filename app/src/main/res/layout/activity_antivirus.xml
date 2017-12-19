@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8866ff00"
+        android:text="手机杀毒"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+        android:id="@+id/iv_antivrus_status"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_scanner_malware"
+        android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/iv_antivrus_scanner"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/act_scanning_03"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_antivirus_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="正在扫描"
+            android:layout_toRightOf="@id/iv_antivrus_scanner"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:layout_marginRight="15dp"
+            android:singleLine="true"
+            />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pb_antivirus_progressbar"
+            android:layout_below="@id/tv_antivirus_text"
+            android:layout_toRightOf="@id/iv_antivrus_scanner"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:progressDrawable="@drawable/progress_antivirus_bg" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_antivirus_safeapk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp">
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

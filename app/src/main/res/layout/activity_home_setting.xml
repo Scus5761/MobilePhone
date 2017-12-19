@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_home_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#8866ff00"
+                    android:text="设置中心"
+                    android:gravity="center_horizontal"
+                    android:textSize="22sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp" />
+
+                <com.itheima.settingview.SettingView
+                    android:id="@+id/tv_home_selfview"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+                <com.itheima.settingview.Toast_Custom_View
+                    android:id="@+id/toast_custom"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+                <com.itheima.settingview.Toast_Custom_Background
+                    android:id="@+id/toast_custom_background"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+                <com.itheima.settingview.Toast_Custom_Background
+                    android:id="@+id/toast_custom_location"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+                <com.itheima.settingview.BlackNum
+                    android:id="@+id/bn_black_num"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+                <com.itheima.settingview.WatchDog
+                    android:id="@+id/watch_dog"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+        </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_antivirus_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="正在扫描"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="20sp"
+            android:singleLine="true"
+            />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pb_antivirus_progressbar"
+            android:layout_below="@id/tv_antivirus_text"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:progressDrawable="@drawable/progress_antivirus_bg" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_cachefragment_clear"
+        android:text="立即清除"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+    <ListView
+        android:id="@+id/lv_fragment_cache"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+
+</LinearLayout>

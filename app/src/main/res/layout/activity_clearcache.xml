@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8866ff00"
+        android:text="缓存清理"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <FrameLayout
+    android:id="@+id/frag_cache_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="缓存清理"
+            android:background="@drawable/button"
+            android:onClick="cache"/>
+
+        <Button
+            android:layout_width="0dp"
+           android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="SD卡清理"
+            android:background="@drawable/button"
+            android:onClick="sd"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
